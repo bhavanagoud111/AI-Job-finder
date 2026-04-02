@@ -6,8 +6,6 @@ An intelligent AI-powered tool that automates the job application process by:
 3. Automatically tailoring your CV to match job requirements
 4. Generating customized cover letters
 
-> Built by [Bhavana Goud](https://github.com/bhavanagoud111)
-
 ## Features
 
 - **Job Scraping**: Automatically search and collect job listings from LinkedIn
