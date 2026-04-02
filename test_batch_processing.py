@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# Author: Bhavana Goud | github.com/bhavanagoud111
 """
 Test script for batch processing of CVs.
 

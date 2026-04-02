@@ -1,3 +1,4 @@
+# Author: Bhavana Goud | github.com/bhavanagoud111
 """
 Main entry point for the Job Application AI Agent.
 

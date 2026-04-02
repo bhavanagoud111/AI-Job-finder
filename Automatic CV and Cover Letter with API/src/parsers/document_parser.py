@@ -1,3 +1,4 @@
+# Author: Bhavana Goud | github.com/bhavanagoud111
 """
 Document parser module for extracting content from Word documents.
 This module provides functionality to parse CV and cover letter documents.

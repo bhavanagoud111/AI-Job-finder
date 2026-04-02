@@ -1,3 +1,4 @@
+# Author: Bhavana Goud | github.com/bhavanagoud111
 """
 Web Interface for Job Application AI Agent
 

@@ -1,10 +1,12 @@
-# Job Application AI Agent
+# AI Job Finder
 
 An intelligent AI-powered tool that automates the job application process by:
 1. Scraping job listings from platforms like LinkedIn
 2. Analyzing job descriptions to extract key requirements
 3. Automatically tailoring your CV to match job requirements
 4. Generating customized cover letters
+
+> Built by [Bhavana Goud](https://github.com/bhavanagoud111)
 
 ## Features
 
@@ -25,8 +27,8 @@ An intelligent AI-powered tool that automates the job application process by:
 
 1. Clone this repository:
 ```bash
-git clone https://github.com/yourusername/Job-apply-AI-agent.git
-cd Job-apply-AI-agent
+git clone https://github.com/bhavanagoud111/AI-Job-finder.git
+cd AI-Job-finder
 ```
 
 2. Run the installation script:
@@ -97,8 +99,4 @@ For detailed testing instructions, see [TESTING_GUIDE.md](TESTING_GUIDE.md).
 
 ## License
 
-MIT
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
+MIT License — Copyright (c) 2026 Bhavana Goud
