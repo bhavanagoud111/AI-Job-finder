@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
-# Author: Bhavana Goud | github.com/bhavanagoud111
 """
-Test script for batch processing of CVs.
+End-to-end demo of batch CV processing.
 
-This script demonstrates how to use the batch processing functionality
-to generate multiple tailored CVs for different jobs.
+This is not an automated test: it scrapes live LinkedIn job listings and
+then generates a tailored CV for each one. Run it from the repository root
+after installing the package (./install.sh or pip install -e .):
+
+    python scripts/batch_processing_demo.py --cv path/to/your/cv_template.docx
 """
 
 import os
@@ -21,8 +23,8 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 def main():
-    """Main function to test batch processing."""
-    parser = argparse.ArgumentParser(description='Test batch processing of CVs')
+    """Scrape jobs, then generate a tailored CV for each one."""
+    parser = argparse.ArgumentParser(description='Scrape LinkedIn jobs and generate tailored CVs for each')
     parser.add_argument('--cv', required=True, help='Path to CV template (.docx)')
     parser.add_argument('--keyword', default='Software Engineer', help='Job title or keyword to search for')
     parser.add_argument('--location', default='Berlin', help='Location to search in')
@@ -88,7 +90,7 @@ def main():
     else:
         logger.warning("Failed to generate any CVs")
     
-    logger.info("Test completed")
+    logger.info("Done")
 
 if __name__ == "__main__":
     main() 

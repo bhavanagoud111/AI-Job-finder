@@ -1,4 +1,3 @@
-# Author: Bhavana Goud | github.com/bhavanagoud111
 """
 CV Analyzer Module
 
@@ -425,8 +424,10 @@ class CVModifier:
             bool: True if successful, False otherwise
         """
         try:
-            # Ensure the directory exists
-            os.makedirs(os.path.dirname(output_path), exist_ok=True)
+            # Ensure the directory exists (a bare filename has no directory part)
+            output_dir = os.path.dirname(output_path)
+            if output_dir:
+                os.makedirs(output_dir, exist_ok=True)
             
             # Save the document
             self.doc.save(output_path)

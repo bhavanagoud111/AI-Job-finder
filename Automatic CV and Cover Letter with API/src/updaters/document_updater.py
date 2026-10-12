@@ -1,4 +1,3 @@
-# Author: Bhavana Goud | github.com/bhavanagoud111
 """
 Document updater module for tailoring CV and cover letter based on job descriptions.
 This module combines document parsing and OpenAI integration to create tailored documents.
@@ -89,7 +88,7 @@ class DocumentUpdater:
                 suggestions = analysis  # Already parsed JSON
             
             # Create output directory if it doesn't exist
-            os.makedirs(os.path.dirname(output_path), exist_ok=True)
+            os.makedirs(os.path.dirname(output_path) or ".", exist_ok=True)
             
             # Create a new document by copying the original
             new_doc = Document(self.cv_path)
@@ -138,7 +137,7 @@ class DocumentUpdater:
                 raise ValueError(tailored_body)
             
             # Create output directory if it doesn't exist
-            os.makedirs(os.path.dirname(output_path), exist_ok=True)
+            os.makedirs(os.path.dirname(output_path) or ".", exist_ok=True)
             
             # Create a new document by copying the original
             new_doc = Document(self.cover_letter_path)

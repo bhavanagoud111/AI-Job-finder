@@ -1,4 +1,3 @@
-# Author: Bhavana Goud | github.com/bhavanagoud111
 """
 OpenAI integration module for analyzing job descriptions and tailoring CV/cover letter.
 This module provides functionality to interact with OpenAI API.

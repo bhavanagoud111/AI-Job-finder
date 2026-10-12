@@ -5,13 +5,13 @@ This project provides an automated system to tailor your CV and cover letter bas
 ## Project Structure
 
 ```
-cv_tailoring_project/
-├── data/                   # Directory for storing CV and cover letter templates
-│   ├── Cover Letter_Imon .docx
-│   └── Imon Hosen - Resume_Template_ATS.docx
+Automatic CV and Cover Letter with API/
+├── data/                   # Put your own CV and cover letter templates here (not committed)
+│   ├── cv_template.docx            # placeholder name, add your own file
+│   └── cover_letter_template.docx  # placeholder name, add your own file
 ├── notebooks/              # Jupyter notebooks for interactive usage
-│   └── cv_tailoring_system.ipynb
-├── output/                 # Directory for storing generated documents
+│   └── cv_system.ipynb
+├── output/                 # Directory for storing generated documents (not committed)
 ├── src/                    # Source code
 │   ├── parsers/            # Document parsing modules
 │   │   └── document_parser.py
@@ -47,10 +47,10 @@ cv_tailoring_project/
    ```
    pip install python-docx openai jupyter
    ```
-3. Place your CV and cover letter templates in the `data` directory
+3. Place your CV and cover letter templates in the `data` directory as `cv_template.docx` and `cover_letter_template.docx` (or change the filenames in the notebook)
 4. Launch the Jupyter notebook:
    ```
-   jupyter notebook notebooks/cv_tailoring_system.ipynb
+   jupyter notebook notebooks/cv_system.ipynb
    ```
 5. Follow the step-by-step instructions in the notebook
 
@@ -89,7 +89,3 @@ The API key can be provided in two ways:
 - The system uses GPT-3.5-turbo by default for cost efficiency, but you can modify it to use GPT-4 for potentially better results
 - Document parsing is based on a simplified approach and may need adjustments for different document formats
 - The system creates new documents rather than modifying the originals to preserve your templates
-
-## License
-
-This project is provided for personal use.

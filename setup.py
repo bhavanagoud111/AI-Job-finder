@@ -13,8 +13,7 @@ with open("requirements.txt", "r", encoding="utf-8") as fh:
 setup(
     name="ai-job-finder",
     version="0.1.0",
-    author="Bhavana Goud",
-    author_email="bhavanagoud111@github.com",
+    author="imon333, Bhavana Ediga",
     description="AI-powered job application automation tool",
     long_description=long_description,
     long_description_content_type="text/markdown",
@@ -22,7 +21,6 @@ setup(
     packages=find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
-        "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
     python_requires=">=3.8",
@@ -33,4 +31,5 @@ setup(
         ],
     },
     include_package_data=True,
+    package_data={"job_apply_ai.ui": ["templates/*.html"]},
 ) 
