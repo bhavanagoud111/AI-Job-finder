@@ -89,6 +89,7 @@ job-apply-ai tailor --cv path/to/cv_template.docx --job path/to/job_description.
 - `job_apply_ai/cv_modifier/`: CV customization functionality
 - `job_apply_ai/utils/`: Utility functions and helpers
 - `job_apply_ai/ui/`: User interface components
+- `scripts/batch_processing_demo.py`: End-to-end demo that scrapes LinkedIn and generates tailored CVs
 - `job_apply_ai/outputs/`: Output directories for jobs and CVs
   - `job_apply_ai/outputs/jobs/`: Contains Excel files with job listings
   - `job_apply_ai/outputs/cvs/`: Contains generated CV files
