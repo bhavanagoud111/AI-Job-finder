@@ -89,7 +89,3 @@ The API key can be provided in two ways:
 - The system uses GPT-3.5-turbo by default for cost efficiency, but you can modify it to use GPT-4 for potentially better results
 - Document parsing is based on a simplified approach and may need adjustments for different document formats
 - The system creates new documents rather than modifying the originals to preserve your templates
-
-## License
-
-This project is provided for personal use.
