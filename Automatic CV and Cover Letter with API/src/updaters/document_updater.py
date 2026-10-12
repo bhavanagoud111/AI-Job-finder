@@ -1,4 +1,3 @@
-# Author: Bhavana Goud | github.com/bhavanagoud111
 """
 Document updater module for tailoring CV and cover letter based on job descriptions.
 This module combines document parsing and OpenAI integration to create tailored documents.

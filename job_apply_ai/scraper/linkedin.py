@@ -1,4 +1,3 @@
-# Author: Bhavana Goud | github.com/bhavanagoud111
 """
 LinkedIn Job Scraper Module
 

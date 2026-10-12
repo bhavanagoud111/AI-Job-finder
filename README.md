@@ -1,5 +1,7 @@
 # AI Job Finder
 
+Team project built by [@imon333](https://github.com/imon333) and Bhavana Ediga ([@bhavanagoud111](https://github.com/bhavanagoud111)).
+
 An intelligent AI-powered tool that automates the job application process by:
 1. Scraping job listings from platforms like LinkedIn
 2. Analyzing job descriptions to extract key requirements
@@ -95,3 +97,7 @@ job-apply-ai tailor --cv path/to/cv_template.docx --job path/to/job_description.
 
 For detailed testing instructions, see [TESTING_GUIDE.md](TESTING_GUIDE.md).
 
+## Team
+
+- [@imon333](https://github.com/imon333)
+- Bhavana Ediga ([@bhavanagoud111](https://github.com/bhavanagoud111))
