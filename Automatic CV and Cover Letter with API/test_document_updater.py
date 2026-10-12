@@ -8,8 +8,9 @@ import sys
 import docx
 from unittest import mock
 
-# Add the project root to the path
-sys.path.append('/home/ubuntu/cv_tailoring_project')
+# Add the project root (the directory containing this file) to the path
+PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
+sys.path.append(PROJECT_ROOT)
 
 from src.updaters.document_updater import DocumentUpdater
 from src.utils.openai_integration import OpenAIIntegration
@@ -19,8 +20,14 @@ def test_document_updater():
     print("Testing document updater module...")
     
     # Paths to test documents
-    cv_path = '/home/ubuntu/cv_tailoring_project/data/Imon Hosen - Resume_Template_ATS.docx'
-    cover_letter_path = '/home/ubuntu/cv_tailoring_project/data/Cover Letter_Imon .docx'
+    # Place your own templates at these paths before running this test
+    cv_path = os.path.join(PROJECT_ROOT, 'data', 'cv_template.docx')
+    cover_letter_path = os.path.join(PROJECT_ROOT, 'data', 'cover_letter_template.docx')
+    for path in (cv_path, cover_letter_path):
+        if not os.path.exists(path):
+            print(f"Template not found: {path}")
+            print("Add your own CV and cover letter templates to the data/ directory.")
+            return False
     
     # Create a mock OpenAI integration
     mock_openai = mock.MagicMock(spec=OpenAIIntegration)
@@ -50,8 +57,8 @@ def test_document_updater():
     print("✓ analyze_job_description method works correctly")
     
     # Test output paths
-    output_cv_path = '/home/ubuntu/cv_tailoring_project/output/test_cv.docx'
-    output_cl_path = '/home/ubuntu/cv_tailoring_project/output/test_cover_letter.docx'
+    output_cv_path = os.path.join(PROJECT_ROOT, 'output', 'test_cv.docx')
+    output_cl_path = os.path.join(PROJECT_ROOT, 'output', 'test_cover_letter.docx')
     
     # Create output directory if it doesn't exist
     os.makedirs(os.path.dirname(output_cv_path), exist_ok=True)
