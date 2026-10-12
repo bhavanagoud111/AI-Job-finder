@@ -24,12 +24,14 @@ This guide will help you test the Job Application AI Agent, particularly the bat
 
 ## Testing Batch CV Generation
 
-### Method 1: Using the Test Script (Quickest method)
+### Method 1: Using the Demo Script (Quickest method)
 
-We've included a test script that automates the entire process:
+`scripts/batch_processing_demo.py` runs the entire process end to end. It is a
+demo rather than an automated test: it scrapes live LinkedIn listings. Run it
+from the repository root:
 
 ```bash
-./test_batch_processing.py --cv path/to/your/cv_template.docx
+python scripts/batch_processing_demo.py --cv path/to/your/cv_template.docx
 ```
 
 This script will:
