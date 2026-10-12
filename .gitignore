@@ -48,3 +48,5 @@ output/
 instance/
 .webassets-cache
 flask_session/ 
+# Office lock files
+~$*
